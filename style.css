@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  color: #162d4f;
+  background: linear-gradient(#69b2ea, #c7d4df);
+  font-family: "Libre Caslon Text", Georgia, serif;
+}
+
+h1 {
+  color: #a74eeb;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  color: #f82eb1;
+}
+
+.hero {
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.penguin-card {
+  background: #f4f4f5;
+  border: 2px solid #cfd2d8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+#message {
+  font-style: italic;
+}
+
+.penguin {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: radial-gradient(square at 30% 25%, #aadfefee, #c3daf1e7 65%, #b7aee0e8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.scene {
+  width: 78%;
+}
+
+button {
+  font: inherit;
+  color: #ffffff;
+  background: #b534e8;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+  background: #3d0055;
+  transform: scale(1.05);
+}
+
+@keyframes Pet {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-0.6rem) rotate(-4deg); }
+  40% { transform: translateX(0.6rem) rotate(4deg); }
+  60% { transform: translateX(-0.4rem) rotate(-2deg); }
+  80% { transform: translateX(0.4rem) rotate(2deg); }
+}
+
+.Pet{
+  animation: Pet 600ms ease;
+}
+
+.penguin{
+  position: relative;
+  width: 300px;
+}
+
+.penguin img{
+  width:300px;
+}
+
+#penguin_happy{
+  position: absolute;
+  top:50;
+  left:0;
+  display: none;
+}
